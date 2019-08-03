@@ -1,8 +1,10 @@
 python36_test:
   image: python:3.6.8-alpine3.9
   script:
-    - pip install -e .
-    - pytest --cov=febrl tests/
+    - pip install pipenv
+    - pipenv install --dev
+    - pipenv install '-e .'
+    - pipenv shell pytest --cov=febrl tests/
 
 
 python37_test:
