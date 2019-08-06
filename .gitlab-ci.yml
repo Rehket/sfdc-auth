@@ -1,21 +1,19 @@
 python36_test:
   image: python:3.6.8-alpine3.9
   script:
-    - apk update && apk upgrade && apk add alpine-sdk python3-dev libffi-dev
+    - apk update && apk upgrade && apk add alpine-sdk python3-dev libffi-dev libressl-dev
     - python -m pip install -U pip
     - python -m pip install -r dev_req.txt
     - python -m pip install -e .
-    - pytest --cov=febrl tests/
+    - pytest --cov=SFJWT tests/
 
 
 python37_test:
   image: python:3.7.4-alpine3.9
   script:
-    - apk update && apk upgrade && apk add alpine-sdk python3-dev libffi-dev
-    - apk add git=2.20.1-r0 # Needed for coveralls
-    - apk upgrade
+    - apk apk update && apk upgrade && apk add alpine-sdk python3-dev libffi-dev libressl-dev git=2.20.1-r0
     - python -m pip install -U pip
     - python -m pip install -r dev_req.txt
     - pip install -e .
-    - pytest --cov=febrl tests/
+    - pytest --cov=SFJWT tests/
     - coveralls
