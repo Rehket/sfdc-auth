@@ -1,5 +1,7 @@
 # SalesForce JWT Auth
-[![Coverage Status](https://coveralls.io/repos/gitlab/Rehket/salesforce-jwt/badge.svg)](https://coveralls.io/gitlab/Rehket/salesforce-jwt)
+[![Coverage Status](https://coveralls.io/repos/gitlab/Rehket/salesforce-jwt/badge.svg?branch=HEAD)](https://coveralls.io/gitlab/Rehket/salesforce-jwt?branch=HEAD)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0a46f9fd4f6a7cf2f4ed/maintainability)](https://codeclimate.com/github/Rehket/SalesForce-JWT/maintainability)
+
 
 A git installable python module to use server client auth against SalesForce
 
