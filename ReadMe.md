@@ -10,10 +10,12 @@ python -m pip install git+https://gitlab.com/Rehket/salesforce-jwt.git
 
 ## Usage
 ```python
-import SFJWT
+import sfjwt
 import requests
+
+
 # With environment variables set:
-instance_url, bearer_token = SFJWT.get_login()
+instance_url, bearer_token = sfjwt.get_login()
 
 # or if you just want to pass them:
 #instance_url, bearer_token = SFJWT.jwt_login(
