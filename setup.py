@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="rehket",
+    name="sfjwt",
     version="0.0.1",
     description="A small repo to provide functions to authenticate against SalesForce.",
     url="https://github.com/Rehket/SalesForceJWT-Server-Auth",
