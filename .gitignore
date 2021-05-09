@@ -170,3 +170,4 @@ gen### Example user template template
 # IntelliJ project files
 gen
 /pirvate_cert.crt
+/wsl-venv/
