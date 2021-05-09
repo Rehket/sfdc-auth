@@ -53,7 +53,8 @@ def jwt_login(
         },
     )
     body = result.json()
-    if result.status_code != 200:
+    if result.status_code != 201 and result.status_code != 200:
+        print(result.status_code)
         raise RuntimeError(f"Authentication Failed: <error: {body['error']}, description: {body['error_description']}>")
     return str(body["instance_url"]), str(body["access_token"])
 
