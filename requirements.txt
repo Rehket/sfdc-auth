@@ -8,7 +8,7 @@ certifi==2020.12.5
     # via requests
 cffi==1.14.5
     # via cryptography
-chardet==4.0.0
+charset-normalizer==3.1.0
     # via requests
 cryptography==3.4.6
     # via pyjwt
@@ -18,7 +18,7 @@ pycparser==2.20
     # via cffi
 pyjwt[crypto]==2.0.1
     # via -r requirements.in
-requests==2.25.1
+requests==2.31.0
     # via -r requirements.in
 urllib3==1.26.5
     # via requests
